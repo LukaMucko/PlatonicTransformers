@@ -1,0 +1,33 @@
+[project]
+name = "platonictransformers"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ase-db-backends>=0.11.0",
+    "fairchem-core>=1.10.0",
+    "ipdb>=0.13.13",
+    "mendeleev>=0.19.0",
+    "ml-collections>=1.1.0",
+    "pytorch-lightning>=2.5.6",
+    "pyyaml>=6.0.3",
+    "rdkit>=2025.9.1",
+    "scikit-learn>=1.7.2",
+    "timm>=1.0.22",
+    "torch==2.4.0",
+    "torch-cluster>=1.6.3",
+    "torch-geometric>=2.7.0",
+    "torch-scatter>=2.1.2",
+    "torch-sparse>=0.6.18",
+    "torch-spline-conv>=1.2.2",
+    "torchaudio>=2.4.0",
+    "torchmetrics>=1.8.2",
+    "torchvision>=0.19.0",
+    "wandb>=0.23.0",
+]
+
+
+[tool.uv.extra-build-dependencies]
+torch-cluster = ["torch"]
+torch-sparse = ["torch"]
